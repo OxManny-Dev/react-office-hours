@@ -1,5 +1,6 @@
 import Counter from './Counter';
 import List from './List';
+import TodoApp from './TodoApp';
 // A functional component
 // components are functions that just
 // returns HTML
@@ -12,14 +13,18 @@ const App = () => {
 	return (
 		// JSX Fragment
 		<>
+			<TodoApp/>
 			<Counter/>
 			<List
+				myString='Manny is cool'
+				isHungry={true}
 				message={msg1}
 				items={myFaveFoods}
-			/>
-			<List
-				message={msg2}
-				items={myFaveCryptos}
+				myObj={{
+					name: 'manny',
+					lastName: 'jucaban'
+				}}
+				clickMe={() => console.log('I was clicked')}
 			/>
 		</>
 	);
