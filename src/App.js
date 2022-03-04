@@ -1,6 +1,7 @@
 import Counter from './Counter';
 import List from './List';
 import TodoApp from './TodoApp';
+import TodoAppV2 from './TodoAppV2';
 // A functional component
 // components are functions that just
 // returns HTML
